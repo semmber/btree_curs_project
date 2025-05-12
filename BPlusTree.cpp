@@ -81,14 +81,17 @@ void BPlusTreeNode::rangeSearch(int k1, int k2, vector<int>& result) const {
     while (i < n && keys[i] < k1) ++i;
     if (leaf) {
         // В листе: собираем ключи в диапазоне
-        for (; i < n && keys[i] <= k2; ++i)
+        for (; i < n; ++i) {
+            if (keys[i] > k2) return;  // ранний выход
             result.push_back(keys[i]);
+        }
         // Переходим по связному списку листов
         const BPlusTreeNode* node = next;
         while (node) {
-            int j = 0;
-            for (; j < node->n && node->keys[j] <= k2; ++j)
+            for (int j = 0; j < node->n; ++j) {
+                if (node->keys[j] > k2) return;  // выходим, как только вышли за диапазон
                 result.push_back(node->keys[j]);
+            }
             node = node->next;
         }
     } else {

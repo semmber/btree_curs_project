@@ -16,7 +16,7 @@ void runTest(const string& name,
              uniform_int_distribution<int>& dist) {
     cout << "--- Testing " << name << " ---\n";
 
-    // 1. Insertion
+    // 1. Вставка
     auto t1 = chrono::high_resolution_clock::now();
     for (int x : data) tree.insert(x);
     auto t2 = chrono::high_resolution_clock::now();
@@ -25,7 +25,7 @@ void runTest(const string& name,
          << chrono::duration_cast<chrono::milliseconds>(t2 - t1).count()
          << " ms\n";
 
-    // 2. Search existing keys
+    // 2. Поиск существующих ключей
     vector<int> search_keys(M);
     uniform_int_distribution<int> idx_dist(0, data.size() - 1);
     for (int i = 0; i < M; ++i)
@@ -39,7 +39,7 @@ void runTest(const string& name,
          << chrono::duration_cast<chrono::milliseconds>(t2 - t1).count()
          << " ms\n";
 
-    // 3. Range searches
+    // 3. Диапазонный поиск
     t1 = chrono::high_resolution_clock::now();
     for (int i = 0; i < R; ++i) {
         int a = dist(rng), b = dist(rng);
