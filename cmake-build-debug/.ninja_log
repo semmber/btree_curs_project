@@ -1,9 +1,9 @@
 # ninja log v6
-31	3054	7686733404350120	CMakeFiles/btrees.dir/main.cpp.obj	fcb29a29f50702b4
-3055	3263	7686733434590511	btrees.exe	66d00d6efa188e17
-28	1252	7686723741108877	CMakeFiles/btrees.dir/BPlusTree.cpp.obj	7c7faba9a340496
-44	1354	7686720971565043	CMakeFiles/btrees.dir/BTree.cpp.obj	c8fc29bf91986824
-53	2135	7687619379901579	CMakeFiles/btrees.dir/BPlusTree.cpp.obj	7c7faba9a340496
-48	2137	7687619379860233	CMakeFiles/btrees.dir/BTree.cpp.obj	c8fc29bf91986824
 40	3886	7687619379774902	CMakeFiles/btrees.dir/main.cpp.obj	fcb29a29f50702b4
 3887	4309	7687619418266157	btrees.exe	66d00d6efa188e17
+53	2135	7687619379901579	CMakeFiles/btrees.dir/BPlusTree.cpp.obj	7c7faba9a340496
+48	2137	7687619379860233	CMakeFiles/btrees.dir/BTree.cpp.obj	c8fc29bf91986824
+36	2704	7687632107452980	CMakeFiles/btrees.dir/BPlusTree.cpp.obj	7c7faba9a340496
+29	2717	7687632107380655	CMakeFiles/btrees.dir/BTree.cpp.obj	c8fc29bf91986824
+23	4684	7687632107325541	CMakeFiles/btrees.dir/main.cpp.obj	fcb29a29f50702b4
+4685	4875	7687632153941402	btrees.exe	66d00d6efa188e17
